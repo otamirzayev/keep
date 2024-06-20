@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  body,
+  html,
+  #root {
+    @apply h-full;
+  }
+  .site-container {
+    @apply max-w-7xl mx-auto w-full;
+  }
+  .overlay {
+  }
+}
+#root {
+  @apply flex flex-col;
+}
+main {
+  @apply grow;
+}
