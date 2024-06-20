@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { getAuth } from "firebase/auth";
 import { signOut } from "firebase/auth";
 function themeFromLocalStorage() {
@@ -95,11 +95,13 @@ function Navbar() {
       </div>
       <div className="navbar-end flex gap-10 items-center">
         <div className="indicator">
-          <span className="indicator-item badge badge-xs badge-secondary">
+    <Link to = "/cart" >
+    <span className="indicator-item badge badge-xs badge-secondary">
             {total}
           </span>
           <FaCartShopping className="w-7 h-7 cursor-pointer" />
         </div>
+    </Link>
         <label className="swap swap-rotate">
           <input
             type="checkbox"

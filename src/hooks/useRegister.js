@@ -1,5 +1,5 @@
 // import { useCallback } from "react"
-import { auth } from "../firebase/firebase.config";
+import { auth } from "../firebase/firebase.Config";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useGlobalContext } from "./useGlobalContext";
 
